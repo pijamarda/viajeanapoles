@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Planificación de Viaje</title>
+  <meta charset="utf-8">
+  <style>
+    /* Opcional: Estilos básicos para mejor presentación */
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: #1a1a1a; /* Fondo oscuro */
+      color: #f0f0f0; /* Texto claro */
+    }
+    h1 {
+      color: #e0e0e0;
+    }
+    .mermaid {
+      background-color: #2b2b2b; /* Fondo ligeramente más claro para el diagrama */
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto; /* Para diagramas anchos */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Planificación de Viaje a Nápoles</h1>
+
+  <div class="mermaid">
+%%{init: {'theme': 'dark', 'themeVariables': {'lineColor': '#FFFFFF', 'sectionBkgColor': '#333333', 'sectionBkgColor2': '#444444', 'altTaskBkgColor': '#555555'}}}%%
+timeline
+    title Viaje a Nápoles
+
+    2025-06-25 : Salimos de Madrid 19-30 : Llegamos a Nápoles 22-05
+    2025-06-26 : Centro Histórico y Duomo : Catedral de Nápoles Spaccanapoli
+    2025-06-27 : Excursión a Positano
+    2025-06-28 : Centro de Nápoles : Excursión a Pompeya por la Noche
+    2025-06-29 : Excursión a Capri
+    2025-06-30 : Pendiente
+    2025-07-01 : Pizzas y Barrio Español : Delicias Culinarias Compras
+    2025-07-02 : Salida de Nápoles 14-40 : Llegamos a Madrid 17-30
+  </div>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.js';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+
+</body>
+</html>
