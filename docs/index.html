@@ -26,7 +26,7 @@
 
   <h1>Planificación de Viaje a Nápoles</h1>
 
-  <div class="mermaid">
+  <pre class="mermaid">
 %%{init: {'theme': 'dark', 'themeVariables': {'lineColor': '#FFFFFF', 'sectionBkgColor': '#333333', 'sectionBkgColor2': '#444444', 'altTaskBkgColor': '#555555'}}}%%
 timeline
     title Viaje a Nápoles
@@ -39,11 +39,18 @@ timeline
     2025-06-30 : Pendiente
     2025-07-01 : Pizzas y Barrio Español : Delicias Culinarias Compras
     2025-07-02 : Salida de Nápoles 14-40 : Llegamos a Madrid 17-30
-  </div>
+  </pre>
 
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.js';
-    mermaid.initialize({ startOnLoad: true });
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js" defer></script>
+  <script>
+    // Initialize Mermaid after it's loaded and parsed
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof mermaid !== 'undefined') {
+            mermaid.initialize({ startOnLoad: true });
+        } else {
+            console.error('Mermaid not found. Check script loading.');
+        }
+    });
   </script>
 
 </body>
